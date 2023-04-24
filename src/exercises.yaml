@@ -1,0 +1,16 @@
+- name: Bench Press
+  min_reps: 1
+  max_reps: 15
+  workout_type: push
+- name: Pull Up
+  min_reps: 5
+  max_reps: 18
+  workout_type: pull
+- name: Squat
+  min_reps: 3
+  max_reps: 12
+  workout_type: legs
+- name: Deadlift
+  min_reps: 3
+  max_reps: 12
+  workout_type: pull
