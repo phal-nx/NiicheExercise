@@ -1,18 +1,9 @@
-from sqlalchemy import create_engine, Column, Integer, String, ForeignKey
-from sqlalchemy.orm import declarative_base, relationship
+from sqlalchemy import Column, Integer, String, ForeignKey
+from sqlalchemy.orm import relationship
 
-Base = declarative_base()
-
-
-# Auth model
-class User(Base):
-    __tablename__ = "users"
-    id = Column(String, primary_key=True)
-    email = Column(String, unique=True, index=True)
-    password = Column(String)
+from src.models import Base
 
 
-# Exercise models
 class Workout(Base):
     __tablename__ = 'workouts'
     id = Column(Integer, primary_key=True)

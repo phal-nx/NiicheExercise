@@ -1,2 +1,2 @@
-from exercise import exercise_router
-from user import user_router
+from src.routers.exercise import exercise_router
+from src.routers.user import user_router
