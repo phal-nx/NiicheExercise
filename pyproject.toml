@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "exerciseapp"
+version = "0.1.0"
+description = ""
+authors = ["Phil Leonowens <phil.leonowens@gmail.com>", "Nichole atwood"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.95.1"
+uvicorn = "^0.21.1"
+sqlalchemy = "^2.0.10"
+pyyaml = "^6.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
