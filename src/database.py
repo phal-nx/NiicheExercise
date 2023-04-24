@@ -49,7 +49,7 @@ def create_exercise(db: Session, exercise: models.Exercise):
 
 
 def create_predefined_exercises(db: Session):
-    with open('exercises.yaml', 'r') as f:
+    with open('src/exercises.yaml', 'r') as f:
         predefined_exercises = yaml.safe_load(f)
 
     for exercise in predefined_exercises:

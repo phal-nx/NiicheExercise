@@ -4,7 +4,7 @@ from sqlalchemy.orm import sessionmaker
 import uvicorn
 
 from src import database, models
-from src.routes import router  # Import the router from your routes module
+from src.routers import exercise_router, user_router
 
 engine = create_engine(database.DATABASE_URL)
 models.Base.metadata.create_all(bind=engine)
@@ -15,7 +15,8 @@ database.create_predefined_exercises(SessionLocal())
 app = FastAPI()
 
 # Include the router in your main FastAPI app
-app.include_router(router)
+app.include_router(exercise_router)
+app.include_router(user_router)
 
 
 def main():
